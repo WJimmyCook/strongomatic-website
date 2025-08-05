@@ -37,12 +37,15 @@
       }
 
       .app-card {
+        display: block;
+        text-decoration: none;
         background: white;
         padding: 20px;
         border-radius: 10px;
         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         width: 300px;
         transition: transform 0.2s;
+        cursor: pointer;
       }
 
       .app-card:hover {
@@ -73,22 +76,32 @@
       .app-link:hover {
         background-color: #0095ff;
       }
+
+      .app-logo {
+        width: 120px;
+        height: 120px;
+        margin-bottom: 15px;
+        object-fit: contain;
+        border-radius: 12px;
+      }
     </style>
   </head>
   <body>
     <div class="container">
-      <h1>Your Home Gym Companion</h1>
+      <h1>Strength Training Apps</h1>
       <div class="apps-container">
-        <div class="app-card">
+        <a href="https://keylifts.com" class="app-card">
+          <img src="keylifts.png" alt="KeyLifts Logo" class="app-logo" />
           <h2>KeyLifts</h2>
           <p>Track and optimize your key compound lifts with intelligent progression tracking.</p>
-          <a href="#" class="app-link">Open KeyLifts</a>
-        </div>
-        <div class="app-card">
+          <span class="app-link">Open KeyLifts</span>
+        </a>
+        <a href="https://allsets.app" class="app-card">
+          <img src="allsets.png" alt="Allsets Logo" class="app-logo" />
           <h2>Allsets</h2>
           <p>Complete workout tracking solution for all your training needs.</p>
-          <a href="#" class="app-link">Open Allsets</a>
-        </div>
+          <span class="app-link">Open Allsets</span>
+        </a>
       </div>
     </div>
   </body>
