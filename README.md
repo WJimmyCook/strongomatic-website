@@ -1,0 +1,1 @@
+# strongomatic-website
